@@ -1,4 +1,4 @@
-/*! markdown-it 12.1.0 https://github.com/markdown-it/markdown-it @license MIT */
+/*! markdown-it 12.1.0 https://github.com/zeroby0/markdown-it @license MIT */
 (function(global, factory) {
   typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define(factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, 
   global.markdownit = factory());
@@ -4379,28 +4379,7 @@
   };
   // Code block (4 spaces padded)
     var code = function code(state, startLine, endLine /*, silent*/) {
-    var nextLine, last, token;
-    if (state.sCount[startLine] - state.blkIndent < 4) {
-      return false;
-    }
-    last = nextLine = startLine + 1;
-    while (nextLine < endLine) {
-      if (state.isEmpty(nextLine)) {
-        nextLine++;
-        continue;
-      }
-      if (state.sCount[nextLine] - state.blkIndent >= 4) {
-        nextLine++;
-        last = nextLine;
-        continue;
-      }
-      break;
-    }
-    state.line = last;
-    token = state.push("code_block", "code", 0);
-    token.content = state.getLines(startLine, last, 4 + state.blkIndent, true);
-    token.map = [ startLine, state.line ];
-    return true;
+    return false;
   };
   // fences (``` lang, ~~~ lang)
     var fence = function fence(state, startLine, endLine, silent) {

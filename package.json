@@ -1,6 +1,6 @@
 {
   "name": "markdown-it",
-  "version": "12.1.0",
+  "version": "13.0.0",
   "description": "Markdown-it - modern pluggable markdown parser.",
   "keywords": [
     "markdown",
@@ -9,7 +9,7 @@
     "markdown-it",
     "markdown-it-plugin"
   ],
-  "repository": "markdown-it/markdown-it",
+  "repository": "zeroby0/markdown-it",
   "license": "MIT",
   "main": "index.js",
   "bin": {
