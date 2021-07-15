@@ -1,3 +1,13 @@
+This fork disables indenting text to denote <code></code>.
+
+I mix HTML, Nunjucks, and markdown in templates,
+and markdown-it thinks my indented Nunjucks code is
+literal `code`. So I made this fork.
+I intend to keep it updated with [markdown-it/markdown-it](https://github.com/markdown-it/markdown-it),
+but no promises.
+
+For documentation, and everything else, visit [markdown-it/markdown-it].
+
 # markdown-it <!-- omit in toc -->
 
 [![CI](https://github.com/markdown-it/markdown-it/workflows/CI/badge.svg)](https://github.com/markdown-it/markdown-it/actions)
